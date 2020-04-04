@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "esnext", // 가능한 최신 js로 컴파일
+    "moduleResolution": "node",
+    "module": "es6",
+    "allowJs": true,
+    "noEmit": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "noUnusedLocals": true,
+    "outDir": "./dist",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "sourceRoot": "/",
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./",
+    "paths": {
+      "~/*": ["./src/*"]
+    }
+  }
+}
