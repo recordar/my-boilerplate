@@ -1,18 +1,29 @@
 {
+  // 참고: https://typescript-kr.github.io/pages/Compiler%20Options.html
   "compilerOptions": {
-    "target": "esnext", // 가능한 최신 js로 컴파일
-    "moduleResolution": "node",
+    /** 컴파일 타겟 버전 */
+    "target": "esnext",
+
+    /** 모듈 시스템 관련 */
     "module": "es6",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+
+    /** Javscript 관련 */
     "allowJs": true,
     "noEmit": true,
     "strict": true,
     "esModuleInterop": true,
-    "noUnusedLocals": true,
-    "outDir": "./dist",
-    "sourceMap": true,
+
+    /** 로컬 변수 관련 */
     "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+
+    /** 소스맵 관련 */
+    "sourceMap": true,
     "sourceRoot": "/",
-    "allowSyntheticDefaultImports": true,
+    "outDir": "./dist",
     "baseUrl": "./",
     "paths": {
       "~/*": ["./src/*"]
